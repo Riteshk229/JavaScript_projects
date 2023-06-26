@@ -1,0 +1,117 @@
+htmtl,body{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(160, 164, 201); */
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+    margin: 10px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    margin-top: 10px;
+    width: 500px;
+    height: 500px;
+    /* border: 2px solid ; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 10%;
+}
+
+.title h2{
+    letter-spacing: .3rem;
+    font-weight: 600;
+}
+.underline{
+    border: 1px solid blue;
+    width: 50%;
+}
+
+.review{
+    height: 90%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1%;
+    background-color: rgb(250, 248, 246);
+    width: 90%;
+    box-shadow: 0px 0px 8px 2px rgb(189, 183, 183);
+}
+
+.review div{
+    padding: 1%;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+#job{
+    text-transform: uppercase;
+    color: rgb(61, 238, 214);
+}
+
+#info{
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 2% 10% 2%;
+    text-align: justify;
+    width: 80%;
+    height: 50%;
+    overflow: scroll;
+}
+
+/* hide the scrollbar but enable sto scroll */
+#info::-webkit-scrollbar{
+    display: none;
+  }
+
+.btn-container{
+    width: 20%;
+    padding: 2%;
+    margin: 2%;
+}
+
+button{
+    background:none;
+    border:none;
+    cursor: pointer;
+    color: rgb(60, 130, 236);
+}
+
+.random-btn{
+    border: 1px solid rgb(103, 103, 219);
+    border-radius: 10px;
+    font-size: 1rem;
+    box-shadow: 0px 0px 2px 2px rgb(168, 168, 240);
+    margin: 2%;
+}
+
+.random-btn:hover{
+    background-color: black;
+    color: aliceblue;
+}

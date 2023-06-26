@@ -1,0 +1,144 @@
+:root{
+    --radius : 10px;
+    --clr-gold: #c59d5f;
+
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+    text-transform: capitalize;
+}
+
+li{
+    letter-spacing: .2rem;
+}
+
+h2{
+    color: var(--clr-gold);
+    font-family: "Great Vibes", cursive;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.questions{
+    height: auto;
+    min-height: 400px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.title{
+    font-size: 1.5rem;
+}
+
+.section-center{
+    height: auto;
+    min-height: 300px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.question{
+    height: auto;
+    width: 100%;
+    background-color: aliceblue;
+    box-shadow: 0px 0px 2px 2px rgb(171, 192, 192);
+    border-radius: var(--radius);
+}
+
+.question:hover{
+    transform: scale(1.2);
+    transition: transform  0.5s ease-in-out;
+}
+
+.underline{
+    border: 1px solid lightgray;
+    opacity: 0.8;
+    width: 90%;
+    margin: 0 3% 0;
+}
+
+.question-text{
+    font-size: 0.8rem;
+    text-align: justify;
+    padding: 0 4% 0;
+    display: none;
+}
+
+.question-title{
+    
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:1% 0 1%;
+    padding: 0 1% 0;
+}
+
+
+.question-btn{
+    width: 4rem;
+    height: 3rem;
+    background: none;
+    border: none;
+    color: var(--clr-gold);
+    position: relative;
+    
+}
+
+.question-btn span{
+    font-size: 1.4rem;
+    transform: rotate(0deg);
+    transition: all 0.2s ease-in-out;
+    /* position:absolute;
+    top:10% */
+}
+
+.question-btn span:hover{
+    transform: rotate(90deg);
+    transition: all 0.2s ease-in-out;
+}
+
+.plus{
+    position: absolute;
+    right: 22%;
+    top: 25%;
+} 
+.minus{
+    position: absolute;
+    right: 22%;
+    top: 25%;
+    display: none;
+} 
+
+.show-text .question-text {
+    display: block;
+}
+
+.show-text .plus{
+    display: none;
+}
+
+.show-text .minus{
+    display: block;
+}

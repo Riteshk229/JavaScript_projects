@@ -1,4 +1,4 @@
-const colors = ["Green","red","aqua","cyan","rgb(125,125,125)","#f15025"];
+const colors = ["Green","red","aqua","yellow","purple","rgb(125,125,125)","#f15025"];
 
 const btn = document.getElementById("btn");
 const color = document.getElementById("clr");
@@ -9,6 +9,7 @@ btn.addEventListener("click",function(e){
     // get random number between 0-4
     const randomNumber = getRandomNumber();
     console.log(randomNumber);
+    
     document.body.style.backgroundColor = colors[randomNumber];
 
     // text content to acces the value inside color span

@@ -75,6 +75,7 @@ prev.addEventListener("click",function(){
 // show random person
 random.addEventListener("click",function(){
     currentItem = getRandomPerson();
+    console.log(currentItem);
     showPerson();
 });
 

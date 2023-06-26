@@ -26,24 +26,24 @@ questions.forEach(function(question){
 });
 
 // traversing the dom
-const btns = document.querySelectorAll('.question-btn');
+// const btns = document.querySelectorAll('.question-btn');
 
-btns.forEach(function(btn){
-    btn.addEventListener('click',function(e){
-        // parentElement gives the immediate parent of the selected element
-        // so chaining them will let us traverse the dom from bottom to top
-        // console.log(e.currentTarget.parentElement.parentElement);
-        let question = e.currentTarget.parentElement.parentElement;
+// btns.forEach(function(btn){
+//     btn.addEventListener('click',function(e){
+//         // parentElement gives the immediate parent of the selected element
+//         // so chaining them will let us traverse the dom from bottom to top
+//         // console.log(e.currentTarget.parentElement.parentElement);
+//         let question = e.currentTarget.parentElement.parentElement;
 
-        // querySelecterAll("") will give us all the element have the same query
-        const questions = document.querySelectorAll('.question');
+//         // querySelecterAll("") will give us all the element have the same query
+//         const questions = document.querySelectorAll('.question');
 
-        // forEach(callBack()) lets us loop through all the element of array got via querySelectorAll("")
-        questions.forEach(function(item){
-            if(question !== item){
-                item.classList.remove('show-text');
-            }
-        });
-        question.classList.toggle('show-text');
-    });
-});
+//         // forEach(callBack()) lets us loop through all the element of array got via querySelectorAll("")
+//         questions.forEach(function(item){
+//             if(question !== item){
+//                 item.classList.remove('show-text');
+//             }
+//         });
+//         question.classList.toggle('show-text');
+//     });
+// });

@@ -6,9 +6,12 @@ toggle.addEventListener('click',function(){
 
     // .contains in .classList return boolean value 
     // console.log(links.classList.contains('links'));
-    if(links.classList.contains('show-links')){
-        links.classList.remove('show-links');
-    } else{
-        links.classList.add("show-links");
-    }
+    // if(links.classList.contains('show-links')){
+    //     links.classList.remove('show-links');
+    // } else{
+    //     links.classList.add("show-links");
+    // }
+
+    // lines 9 to 13 could also be written as 
+    links.classList.toggle('show-links');
 });

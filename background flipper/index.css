@@ -5,6 +5,10 @@ html,body{
     background-color: aqua;
 }
 
+a:visited{
+    color: rgb(4, 0, 255);
+}
+
 nav{
     background-color: aliceblue;
     display: flex;
@@ -23,7 +27,7 @@ nav{
 }
 .nav-center h4{
     margin: 0;
-    width: 30%;
+    width: auto;
     color: rgb(4, 0, 255);
 }
 

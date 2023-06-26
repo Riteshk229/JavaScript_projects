@@ -7,3 +7,4 @@
 4. Navbar toggler : https://riteshk229.github.io/JavaScript_projects/navbar%20toggle
 5. Side bar : https://riteshk229.github.io/JavaScript_projects/side%20bar
 6. Modal :  https://riteshk229.github.io/JavaScript_projects/Modal
+7. questions : https://riteshk229.github.io/JavaScript_projects/questions

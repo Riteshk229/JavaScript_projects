@@ -8,3 +8,6 @@
 5. Side bar : https://riteshk229.github.io/JavaScript_projects/side%20bar
 6. Modal :  https://riteshk229.github.io/JavaScript_projects/Modal
 7. Questions : https://riteshk229.github.io/JavaScript_projects/questions
+8. Menu : https://riteshk229.github.io/JavaScript_projects/Menu
+9. Video : https://riteshk229.github.io/JavaScript_projects/Video
+

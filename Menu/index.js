@@ -72,34 +72,25 @@ const menu = [
       img: "./images/item-9.jpeg",
       desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
     },
+    {
+      id: 10,
+      title: "Steak Dinner",
+      category: "dinner",
+      price: 20,
+      img: "./images/item-10.jpeg",
+      desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
+    },
 ];
   
 const sectionCeter = document.querySelector('.section-center');
-const filterBtns = document.querySelectorAll('.filter-btn');
+const container = document.querySelector('.btn-container');
 
 // load items
 window.addEventListener('DOMContentLoaded', function () {
     displayMenuItems(menu);
+    displayMenuBtns();
 })
 
-// filter items
-filterBtns.forEach(btn => {
-    btn.addEventListener('click', function (e) {
-        const category = e.currentTarget.dataset.category;
-        
-        const menuCategory = menu.filter(function (menuItem) {
-            console.log(menuItem.category);
-            return menuItem.category === category;
-        })
-        console.log(menuCategory);
-        if (category === 'all') {
-            displayMenuItems(menu);
-        }
-        else {
-            displayMenuItems(menuCategory);
-        }
-    })
-});
 
 
 function displayMenuItems(menuItems) {
@@ -122,4 +113,48 @@ function displayMenuItems(menuItems) {
     })
     displayMenu = displayMenu.join('');
     sectionCeter.innerHTML = displayMenu;
+}
+
+function displayMenuBtns() {
+    const categories = menu.reduce(
+        function (values, item) {
+            
+            if (!values.includes(item.category)) {  
+                values.push(item.category);
+            }   
+            return values;
+        }, ['all']);
+        
+        
+    const categoryBtns = categories.map(function (category) {
+        return `
+        <button class="filter-btn"
+        type="button"
+        data-category=${category}>
+        ${category}
+        </button>
+        `;
+    }).join('');
+
+    container.innerHTML = categoryBtns;
+    
+    const filterBtns = container.querySelectorAll('.filter-btn');
+    
+    // filter items
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', function (e) {
+            const category = e.currentTarget.dataset.category;
+            
+            const menuCategory = menu.filter(function (menuItem) {
+                return menuItem.category === category;
+            })
+            console.log(menuCategory);
+            if (category === 'all') {
+                displayMenuItems(menu);
+            }
+            else {
+                displayMenuItems(menuCategory);
+            }
+        })
+    });
 }

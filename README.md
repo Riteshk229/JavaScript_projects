@@ -10,4 +10,5 @@
 7. Questions : https://riteshk229.github.io/JavaScript_projects/questions
 8. Menu : https://riteshk229.github.io/JavaScript_projects/Menu
 9. Video : https://riteshk229.github.io/JavaScript_projects/Video
+10. Scroll : https://riteshk229.github.io/JavaScript_projects/Scroll
 
